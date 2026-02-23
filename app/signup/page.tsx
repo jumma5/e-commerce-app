@@ -104,7 +104,6 @@ export default function SignupPage() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="w-full rounded-md border border-border bg-background px-4 py-3 text-foreground transition-colors placeholder:text-muted-foreground focus:border-foreground focus:outline-none"
-              placeholder="John Doe"
             />
             {errors.name && <p className="mt-1 text-sm text-destructive">{errors.name}</p>}
           </div>
@@ -119,7 +118,6 @@ export default function SignupPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full rounded-md border border-border bg-background px-4 py-3 text-foreground transition-colors placeholder:text-muted-foreground focus:border-foreground focus:outline-none"
-              placeholder="you@example.com"
             />
             {errors.email && <p className="mt-1 text-sm text-destructive">{errors.email}</p>}
           </div>
@@ -135,7 +133,6 @@ export default function SignupPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full rounded-md border border-border bg-background px-4 py-3 text-foreground transition-colors placeholder:text-muted-foreground focus:border-foreground focus:outline-none"
-                placeholder="••••••"
               />
               <button
                 type="button"
@@ -159,7 +156,7 @@ export default function SignupPage() {
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               className="w-full rounded-md border border-border bg-background px-4 py-3 text-foreground transition-colors placeholder:text-muted-foreground focus:border-foreground focus:outline-none"
-              placeholder="••••••"
+              
             />
             {errors.confirmPassword && <p className="mt-1 text-sm text-destructive">{errors.confirmPassword}</p>}
           </div>
